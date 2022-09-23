@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Second Hand Store</title>
+    <link rel="icon" href="images/icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="essentials.css">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+
+    <!-- Font Body -->
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
+    <!-- font-family: 'Figtree', sans-serif; -->
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <header class="header">
+        <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
+            <img id="mainLogo" src="images/icon.png">
+            <a href="index.html" class="logo">The<span>SecondhandStore</span></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item pr-2">
+                        <a href="index.html" class="nav-link">homepage</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <div class="dropdown">
+                            <button class="dropbtn">shop with us
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="stationery.html">stationery</a>
+                                <a href="essentials.html">hostel essentials</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="selling.html" class="nav-link">sell</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="login.html" class="nav-link">log in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- header section ends -->
+
+    <div class = "container">
+            <img src="images/bgpic3.webp" height="500rem" width="100%">
+    </div>
+
+
+    <section class="container-fluid">
+        <div class="row justify-content-center">
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image1" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review1" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description1" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image1">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/bucket.jpg" class="d-block w-100" alt="bucket">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="bucket2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="bucket3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Bucket</h5>
+                                    <p class="card-text"><b>PRICE: </b>150/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review1">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description1">
+                                    <p class="text">Seller Name:</p> Preeti <br><br>
+                                    <p class="text">Seller Phone No:</p> 9898635253<br><br>
+                                      <br><i class="card-text">Bucket for Bathroom</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image2" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review2" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description2" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image2">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/mattress.png" class="d-block w-100" alt="mattress">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="mattress2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="mattress3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade2" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade2" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Mattress</h5>
+                                    <p class="card-text"><b>PRICE: </b>1500/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review2">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description2">
+                                    <p class="text">Seller Name:</p> Sunaina <br><br>
+                                    <p class="text">Seller Phone No:</p> 4364562523<br><br>
+                                      <br><i class="card-text">Correct Fitting to Bed Frame</i>
+
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image3" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review3" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description3" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image3">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/mug.jpg" class="d-block w-100" alt="mug">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="mug2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="mug3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade3" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade3" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Mug</h5>
+                                    <p class="card-text"><b>PRICE: </b>30/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review3">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description3">
+                                    <p class="text">Seller Name:</p> Keerthi <br><br>
+                                    <p class="text">Seller Phone No:</p> 9087634545<br><br>
+                                      <br><i class="card-text">Mug in right condition</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image4" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review4" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description4" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image4">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/shoedabba.jpg" class="d-block w-100" alt="shoe dabba">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="shoe dabba2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="shoe dabba3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade4" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade4" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Shoe dabba</h5>
+                                    <p class="card-text"><b>PRICE: </b>150/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review4">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description4">
+                                    <p class="text">Seller Name:</p> Suresh <br><br>
+                                    <p class="text">Seller Phone No:</p> 9987623452<br><br>
+                                      <br><i class="card-text">Plastic Box for all Shoes.</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image5" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review5" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description5" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image5">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade5" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/clock.jpg" class="d-block w-100" alt="clock">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="clock2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="clock3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade5" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade5" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Clock</h5>
+                                    <p class="card-text"><b>PRICE: </b>100/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review5">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description5">
+                                    <p class="text">Seller Name:</p> Ramesh <br><br>
+                                    <p class="text">Seller Phone No:</p> 6789598767<br><br>
+                                      <br><i class="card-text">Digital clock for Room</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image6" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review6" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description6" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image6">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade6" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/lamp.jpg" class="d-block w-100" alt="Desk lamp">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="Desk lamp2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="Desk lamp3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade6" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade6" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Desk lamp</h5>
+                                    <p class="card-text"><b>PRICE: </b>70/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review6">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description6">
+                                    <p class="text">Seller Name:</p> Reva <br><br>
+                                    <p class="text">Seller Phone No:</p> 2653996485<br><br>
+                                      <br><i class="card-text">Desk Lamp for Desk with Cable</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image7" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review7" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description7" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image7">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade7" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/lock.jpg" class="d-block w-100" alt="lock">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="lock2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="lock3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade7" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade7" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Lock</h5>
+                                    <p class="card-text"><b>PRICE: </b>60/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review7">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description7">
+                                    <p class="text">Seller Name:</p> Tom <br><br>
+                                    <p class="text">Seller Phone No:</p> 7857859566<br><br>
+                                      <br><i class="card-text">Very Safe Lock</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image8" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review8" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description8" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image8">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade8" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/laundry.jpg" class="d-block w-100" alt="laundry bag">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="laundry bag2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="laundry bag3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade8" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade8" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Laundry Bag</h5>
+                                    <p class="card-text"><b>PRICE: </b>150/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review8">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description8">
+                                    <p class="text">Seller Name:</p> Charan <br><br>
+                                    <p class="text">Seller Phone No:</p> 2485967632<br><br>
+                                      <br><i class="card-text">Laundry bag for room</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image9" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review9" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description9" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image9">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade9" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/suitcase.jpg" class="d-block w-100" alt="suitcase">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="suitcase2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="suitcase3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade9" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade9" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Suitcase</h5>
+                                    <p class="card-text"><b>PRICE: </b>300/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review9">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description9">
+                                    <p class="text">Seller Name:</p> Murthi <br><br>
+                                    <p class="text">Seller Phone No:</p> 7879653220<br><br>
+                                      <br><i class="card-text">Well Maintained Suitcase with Hard Cover</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image10" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review10" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description10" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image10">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade10" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/hanger.jpg" class="d-block w-100" alt="hanger">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="hanger2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="hanger3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade10" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade10" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Clothes Hanger</h5>
+                                    <p class="card-text"><b>PRICE: </b>50/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review10">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description10">
+                                    <p class="text">Seller Name:</p> Preeti <br><br>
+                                    <p class="text">Seller Phone No:</p> 9898635253<br><br>
+                                      <br><i class="card-text">Clothes Hanger to hang your clothes in the cupboard</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image11" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review11" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description11" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image11">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade11" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/pins.png" class="d-block w-100" alt="clothes pin">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="clothes pin2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="clothes pin3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade11" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade11" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Clothes Pin</h5>
+                                    <p class="card-text"><b>PRICE: </b>20/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review11">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description11">
+                                    <p class="text">Seller Name:</p> Uma <br><br>
+                                    <p class="text">Seller Phone No:</p> 4545213603<br><br>
+                                      <br><i class="card-text">Clothes Pins for Drying Clothes</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image12" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review12" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description12" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image12">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade12" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/tumbler.png" class="d-block w-100" alt="tumbler">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="tumbler2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="tumbler3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade12" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade12" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Tumbler</h5>
+                                    <p class="card-text"><b>PRICE: </b>50/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review12">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description12">
+                                    <p class="text">Seller Name:</p> Raju <br><br>
+                                    <p class="text">Seller Phone No:</p> 4987598778<br><br>
+                                      <br><i class="card-text">Steel Tumbler</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5 pb-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image13" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review13" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description13" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image13">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade13" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/hook.jpg" class="d-block w-100" alt="hook">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="hook2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="hook3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade13" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade13" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Wall Hooks</h5>
+                                    <p class="card-text"><b>PRICE: </b>10/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review13">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description13">
+                                    <p class="text">Seller Name:</p> Yogesh <br><br>
+                                    <p class="text">Seller Phone No:</p> 9652886595<br><br>
+                                      <br><i class="card-text">Wall hooks for Hanging Belongings</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image14" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review14" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description14" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image14">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade14" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/alarm.png" class="d-block w-100" alt="alarm">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="alarm2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="alarm3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade14" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade14" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Table Alarm</h5>
+                                    <p class="card-text"><b>PRICE: </b>220/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review14">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description14">
+                                    <p class="text">Seller Name:</p> Mohan <br><br>
+                                    <p class="text">Seller Phone No:</p> 9898635253<br><br>
+                                      <br><i class="card-text">Table Alarm for Desk in Good Condition</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 pt-5">
+                <div class="col pt-5">
+                    <div class="card ">
+                        <div class="card-head">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-items">
+                                    <a href="#Image15" class="nav-link active" data-bs-toggle="tab">Image</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Review15" data-bs-toggle="tab">Details</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a class="nav-link" href="#Description15" data-bs-toggle="tab">Desc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="Image15">
+                                    <div class="card-img-top">
+                                        <div id="carouselFade15" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/board.jpg" class="d-block w-100" alt="Extension board">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="" class="d-block w-100" alt="Extension board2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src=""
+                                                        class="d-block w-100" alt="Extension board3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselFade15" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselFade15" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="text">Extension Board</h5>
+                                    <p class="card-text"><b>PRICE: </b>150/-
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="Review15">
+                                    <p class="text">Condition:</p>Good <br><br>
+                                    <p class="text">Product Type:</p> Hostel Essentials
+                                </div>
+
+                                <div class="tab-pane fade" id="Description15">
+                                    <p class="text">Seller Name:</p> Soham <br><br>
+                                    <p class="text">Seller Phone No:</p> 8755524693<br><br>
+                                      <br><i class="card-text">Extension Board for Room</i>
+                                      <br>
+                                  </p>
+                                </div>
+                                <br>
+                                   <center> <button class="btn">Add to Cart</button> </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Footer section starts  -->
+    <div class="footer">
+        <div class="contact">
+            <p class="credit">Created with ❤️</p>
+            <a href="#" class="contact">Contact Us at abc@mail.com</a>
+        </div>
+
+    </div>
+    <!-- End of Footer section ends -->
+</body>
+
+</html>
