@@ -31,9 +31,11 @@
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="index.js"></script>
+
 </head>
 
-<body>
+<body onload="loadpage()">
 
   <!-- header section starts  -->
   <header class="header">
@@ -80,7 +82,7 @@
     <div class="row" id="row1">
       <div class="col-lg-6">
         <h1 class="big-heading">In need of essentials for college but can't afford?</h1>
-        <h1>That's what we're here for.</h1>
+        <h1 id="mh" onmouseover="mouseen()" onmouseleave="mousele()">That's what we're here for.</h1>
         <p class="aboutus">We're a small second hand business especially aimed towards college going students. As college students ourselves, we understand the difficulty of fidning our essentials for college at the right price.
           That's exactly what we're here for. At TheSecondhandStore, we provide a wide range of second-hand products at very reasonable prices that you just won't be able to avoid!
        </p>
@@ -107,8 +109,10 @@
             <h1 id="hostel" class="big-heading">Hostel Essentials</h1>
           </a>
           <p class="aboutus">This is your one stop shop for all last minute hostel essentials. Buy and sell second hand hostel items in and around VIT.
-            Also shop from well kept / Refurbished hostel items online at our store. Good qulaity products at the best price designed just for you</p>
-          <img src="images/host.png" alt="" height="100" width="100">
+            Also shop from well kept / Refurbished hostel items online at our store. Good quality products at the best price designed just for you
+            at minimal prices so you can have a budget aesthetic.
+          </p>
+          <img src="images/host.png" id="himg" alt="" height="100" width="100" onmouseover="fadefunc()" onmouseout="fadefunc()">
         </div>
 
         <div class="def col-lg-6">
@@ -117,7 +121,7 @@
           </a>
           <p class="aboutus">Find the best Stationery price! Second-hand Stationery for sale in VIT. Buy and sell second hand Stationery items in and around VIT.
             Shop for Refurbished / Used gifts and stationery products online in VIT at TheSecondhandStore. Buy gifts and stationery for your college needs at best price.</p>
-          <img src="images/stat.png" alt="" height="100" width="100">
+          <img src="images/stat.png" id="himg" alt="" height="100" width="100" onmouseover="fadefunc()" onmouseout="fadefunc()">
         </div>
       </div>
     </div>
@@ -126,7 +130,6 @@
 
     <!-- Features -->
     <section class="white-section" id="features">
-
       <div class="container-fluid">
         <div class="row" id="row2">
           <div class="feature-box col-lg-4">
@@ -159,7 +162,7 @@
           <div class="carousel-item active container-fluid">
             <p class="testimonial-text">"I no longer have to go around searching for a substantial pricing. reasonable prices with good quality products!"</p>
             <center>
-              <img class="testimonial-image" src="images/1.png">
+              <img class="testimonial-image" src="images/user.png">
             </center>
             <center>
               <em>B Block, VIT Ladies Hostel</em>
@@ -168,7 +171,7 @@
           <div class="carousel-item container-fluid">
             <p class="testimonial-text">"I love this site! I've found a solution to all my needs!"</p>
             <center>
-              <img class="testimonial-image" src="images/1.png">
+              <img class="testimonial-image" src="images/user.png">
             </center>
             <center>
               <em>L Block, VIT Mens Hostel</em>
@@ -199,11 +202,9 @@
   <div class="footer">
     <div class="contact">
       <p class="credit">Created with ❤️</p>
-      <a href="#" class="contact">Contact Us at abc@mail.com</a>
+      <button type="button" id="ontop" class="btn btn-sm" onclick="toTop()">Back to Top</button>
     </div>
-
   </div>
   <!-- End of Footer section ends -->
-
 </body>
 </html>
