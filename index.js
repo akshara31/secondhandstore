@@ -14,6 +14,7 @@ function mouseen() {
     "font-weight": "bold"
   });
 }
+
 function mousele() {
   $("#mh").css({
     "color": "rgb(201, 187, 207)",
@@ -21,34 +22,46 @@ function mousele() {
   });
 }
 
-//hover function for html elements
+//fade in, fade out effect function for html p elements - NOT WORKING
 
-// $("#himg").hover(function hov(){
-//   $("#himg").fadeIn();
-// })
-// $("#himg").onmouseover = function(){
-//    $("#himg").fadeIn(2000);
-// })
+$(document).ready(function(){
+  $("p.aboutus").mouseover(function(){
+    $(this).fadeTo("slow",1);
+  });
+  $("p.aboutus").mouseleave(function(){
+    $(this).fadeTo("slow",0.4);
+  });
 
-function fadefunc() {
-	$("#himg").fadeIn('slow', 0.4);
-}
-
-//scrolling and making parts of the website appear and dissapear
-$(document).on("scroll", function() {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tags = $(".tag");
-
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
-    if ($(tag).position().top < pageBottom) {
-      $(tag).addClass("visible");
-    } else {
-      $(tag).removeClass("visible");
-    }
-  }
 });
+
+// function fadeoutfunc() {
+// 	// $("p").fadeIn("slow");
+//   $("p.aboutus").css({
+//   "opacity": "0.5",
+//   "transform": "translate(0,1)",
+//   "transition": "all 1s"
+// });
+// }
+
+// function fadeinfunc() {
+// 	// $("p").fadeIn("slow");
+//   $("p.aboutus").css({
+//   "opacity": "1",
+//   "transform": "translate(0,0)",
+//   "transition": "all 1s"
+// });
+// }
+
+
+//scrolling animation
+
+
+//image animation function - NOT WORKING
+const toggleCon = () => {
+  const container = $('.category');
+  container.classList.toggle('active');
+};
+
 
 //console logging when user reaches end of page
 window.onscroll = () => {

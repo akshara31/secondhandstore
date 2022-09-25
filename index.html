@@ -31,17 +31,18 @@
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="jquery.js"></script>
   <script type="text/javascript" src="index.js"></script>
 
 </head>
 
-<body onload="loadpage()">
+<body>
 
   <!-- header section starts  -->
   <header class="header">
     <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
       <img id="mainLogo" src="images/icon.png">
-      <a href="index.html" class="logo">The<span>SecondhandStore</span></a>
+      <a href="index.html" class="logo">The<span> SecondhandStore</span></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,8 +68,6 @@
           <li class="nav-item">
             <a href="login.html" class="nav-link">log in</a>
           </li>
-
-
         </ul>
       </div>
     </nav>
@@ -105,23 +104,23 @@
     <div class="category">
       <div class="row">
         <div class="def col-lg-6">
-          <a href="essentials.html" class="link-mid">
+          <a href="#" class="link-mid">
             <h1 id="hostel" class="big-heading">Hostel Essentials</h1>
           </a>
           <p class="aboutus">This is your one stop shop for all last minute hostel essentials. Buy and sell second hand hostel items in and around VIT.
             Also shop from well kept / Refurbished hostel items online at our store. Good quality products at the best price designed just for you
             at minimal prices so you can have a budget aesthetic.
           </p>
-          <img src="images/host.png" id="himg" alt="" height="100" width="100" onmouseover="fadefunc()" onmouseout="fadefunc()">
+          <img src="images/host.png" class="fimg" alt="" height="100" width="100">
         </div>
 
         <div class="def col-lg-6">
-          <a href="stationery" class="link-mid">
+          <a href="#" class="link-mid">
               <h1 id="station" class="big-heading">Stationery</h1>
           </a>
           <p class="aboutus">Find the best Stationery price! Second-hand Stationery for sale in VIT. Buy and sell second hand Stationery items in and around VIT.
             Shop for Refurbished / Used gifts and stationery products online in VIT at TheSecondhandStore. Buy gifts and stationery for your college needs at best price.</p>
-          <img src="images/stat.png" id="himg" alt="" height="100" width="100" onmouseover="fadefunc()" onmouseout="fadefunc()">
+          <img src="images/stat.png" class="fimg" alt="" height="100" width="100">
         </div>
       </div>
     </div>
@@ -156,13 +155,13 @@
 
 
     <!-- Reviews (Testimonials) -->
-    <section class="colored-section" id="testimonials">
+    <section class="colored-section " id="testimonials">
       <div id="testimonial-carousel" class="carousel slide" data-ride="false">
         <div class="carousel-inner">
           <div class="carousel-item active container-fluid">
             <p class="testimonial-text">"I no longer have to go around searching for a substantial pricing. reasonable prices with good quality products!"</p>
             <center>
-              <img class="testimonial-image" src="images/user.png">
+              <img class="testimonial-image" id="fimg" src="images/user.png">
             </center>
             <center>
               <em>B Block, VIT Ladies Hostel</em>
@@ -171,7 +170,7 @@
           <div class="carousel-item container-fluid">
             <p class="testimonial-text">"I love this site! I've found a solution to all my needs!"</p>
             <center>
-              <img class="testimonial-image" src="images/user.png">
+              <img class="testimonial-image" id="fimg" src="images/user.png">
             </center>
             <center>
               <em>L Block, VIT Mens Hostel</em>
@@ -180,7 +179,7 @@
           <div class="carousel-item container-fluid">
             <p class="testimonial-text">"Very User Friendly and Great Interface! Brilliant Work with the thought behind this:)" </p>
             <center>
-              <img class="testimonial-image" src="images/user.png">
+              <img class="testimonial-image" id="fimg" src="images/user.png">
             </center>
             <center>
               <em>D Annex Block, VIT Mens Hostel</em>
@@ -206,5 +205,6 @@
     </div>
   </div>
   <!-- End of Footer section ends -->
+
 </body>
 </html>
