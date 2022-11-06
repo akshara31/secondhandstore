@@ -5,29 +5,20 @@
     --blue: rgb(183, 211, 223);
     --tealblue-light: rgb(214, 239, 237);
 
-
-
    --light-beige: rgb(240, 235, 227);
     --dark-beige: rgb(228, 220, 207);
     --vin-green: rgb(125, 157, 156);
     --dark-green: rgb(87, 111, 114);
-
-
 
    --pink: rgb(242, 215, 217);
     --light-lilac: rgb(211, 206, 223);
     --dark-blue: rgb(156, 180, 204);
     --darkest-blue: rgb(116, 141, 166);
 
-
-
    --peach-pink: rgb(255, 230, 230);
     --dark-pink: rgb(242, 209, 209);
     --powd-blue: rgb(218, 234, 241);
     --grey-blue: rgb(198, 220, 228);
-
-
-
 
     --border:.1rem solid rgba(0,0,0,.2);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
@@ -185,8 +176,6 @@
   background-color: var(--grey-blue);
 }
 
-
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -196,9 +185,14 @@
 .dropdown:hover .dropbtn {
   background-color: black;
 }
+
+#logout{
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  margin-top: 0.75rem;
+}
 /*End of Navbar Dropdown CSS */
-
-
 
 /* ################################# */
 
@@ -260,27 +254,42 @@
     outline: none;
     background: transparent;
   }
+
   .login-box .user-box label {
     position: absolute;
-    top:0;
+    top:-30px;
     left: 0;
     padding: 10px 0;
     font-size: 16px;
     color: var(--light-beige);
     pointer-events: none;
     transition: .5s;
-
   }
 
+  .login-box .user-box input{
+    font-size: 16px;
+    color: #56cad0;
+  }
+
+  .login-box .user-box input::placeholder{
+    visibility: visible;
+    color: var(--light-beige);
+  }
+ 
+  /* 
   .login-box .user-box input:focus ~ label,
   .login-box .user-box input:active ~ label{
     top: -20px;
     left: 0;
     color: #03e9f4;
     font-size: 12px;
-  }
+  } */
 
-  .login-box form a {
+  .glowbutton{
+    border-radius: 0.75rem;
+    background-color: transparent;
+  }
+  .login-box form .glowbutton {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -294,7 +303,7 @@
     letter-spacing: 4px;
   }
 
-  .login-box a:hover {
+  .login-box .glowbutton:hover {
     background: #77dd77;
     color: #fff;
     border-radius: 5px;
@@ -304,12 +313,12 @@
                 0 0 100px #DCD0FF;
   }
 
-  .login-box a span {
+  .login-box .glowbutton span {
     position: absolute;
     display: block;
   }
 
-  .login-box a span:nth-child(1) {
+  .login-box .glowbutton span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -340,13 +349,20 @@
 .big-heading{
   text-align:center;
   font-size:4rem;
-  padding-top:5rem;
+  padding-top:11rem;
 }
 
 .small-heading{
     text-align:center;
     padding-top: 2rem;
     font-size: 1.2rem;
+}
+
+.text-ext{
+  text-align:center;
+  padding-top: 3.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .spanword{

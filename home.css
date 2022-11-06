@@ -1,4 +1,4 @@
-  /* Defining of Colors: */
+/* Defining of Colors: */
 :root{
     --dark-purp: rgb(137, 138, 166);
     --lilac: rgb(201, 187, 207);
@@ -19,8 +19,6 @@
     --dark-pink: rgb(242, 209, 209);
     --powd-blue: rgb(218, 234, 241);
     --grey-blue: rgb(198, 220, 228);
-
-    --beau-blue: rgb(179, 199, 208);
 
 
     --border:.1rem solid rgba(0,0,0,.2);
@@ -57,8 +55,7 @@
 }
 
 #mainNavbar{
-
-  background-color: #270018;
+  background-color: var(--dark-purp);
   }
 
 #mainLogo{
@@ -95,7 +92,7 @@
 }
 
 .header .navbar a:hover{
-    color: white;
+    color: black;
 }
 
 .navbar-toggler{
@@ -103,6 +100,12 @@
   border-color: var(--lilac);
 }
 
+#logout{
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  margin-top: 0.75rem;
+}
 /* End of Header CSS */
 
 
@@ -125,21 +128,21 @@
 }
 
 .dropbtn:hover {
-  background-color:  #7b2545;
+  background-color:  var(--dark-purp);
   color: black
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #cc6688;
-  color: #d9c3c6;
+  background-color: var(--lilac);
+  color: black;
   min-width: 10rem;
   z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
+  /* float: none; */
   background-color: black;
   color: var(--dark-purp);
   padding: 0.75rem 1rem;
@@ -149,7 +152,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #cc6688;
+  background-color: var(--light-lilac);
 }
 
 .dropdown:hover .dropdown-content {
@@ -157,139 +160,147 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #7b2545;
-}
-
-#logout{
-  height: 2rem;
-  width: 2rem;
-  padding: 0;
-  margin-top: 0.75rem;
+  background-color: var(--dark-purp);
 }
 /*End of Navbar Dropdown CSS */
 
+/* Start of Content CSS */
+.big-heading {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
 
-.container{
-  position: relative;
+.title-image {
+  margin-top: 0rem;
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+#mb{
+  background-color: var(--lilac);
+  border: 0;
+  margin: 1rem 1rem;
+}
+
+#mb:hover {
+  color: var(--dark-purp);
+}
+
+#row1{
+  margin-top: 9.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   text-align: center;
-  padding-top: 1.75rem;
-  font-family: 'Cedarville Cursive', cursive;
-  font-size: 4rem;
-  margin:5rem;
+}
+
+#row2{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.colored-section {
+  background-color: var(--light-lilac);
+  color: black;
+}
+
+.def{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.link-mid{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.def a:hover{
+  color: var(--dark-purp);
+}
+
+.tag{
+  background-color: var(--light-lilac);
+  width: 100%;
+}
+/* End of Content CSS */
+
+
+/* Start of Review/Testimonial CSS Section */
+#testimonials {
+  background-color: var(--light-lilac);
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bold;
+}
+
+.testimonial-image {
+  width: 5%;
+  border-radius: 100%;
+  /* margin: 5rem; */
+  text-align: center;
+}
+/* End of Review/Testimonial CSS Section */
+
+/* Misc CSS */
+.white-section {
+  background-color: var(--light-beige);
 }
 
 .container-fluid{
-  padding-left:7rem;
+  padding: 2rem 2rem;
 }
 
-body{
-    background-color: var(--light-beige);
+#features {
+  position: relative;
 }
 
-/* CARD */
+.feature-title {
+  font-size: 1.5rem;
+}
 
-.card{
-  background-color: #d9c3c6;
-  width:20rem;
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: var(--dark-purp);
+  /* margin-bottom: 1rem; */
+}
+
+.icon:hover {
+  color: var(--lilac);
+}
+
+.category{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
+  background-color: var(--light-lilac);
 }
 
-.card-head{
-  background-color: none !important;
-  padding: 0.5rem 0.75rem;
+p.aboutus{
+  opacity: 0.4;
 }
+/* End of Misc CSS */
 
-.card:hover{
-  transform: translateY(-0.25em);
-  background-color: #67374a9d;
-  color: white;
-}
-
-.card-text{
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
-}
-
-.text{
-  font-weight: bold;
-  letter-spacing: 0.15em;
-  word-spacing: 0.25em;
-  font-size: 1rem;
-}
-
-.nb{
-  letter-spacing: 0.15em;
-  word-spacing: 0.25em;
-  font-size: 1rem;
-}
-
-.image{
-  padding-bottom: 0.8rem;
-}
-
-/*header*/
-
-.nav{
-    font-size: 16px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 20px 13px;
-    outline: 0;
-    cursor: pointer;
-    position: relative;
-}
-
-.nav-link{
-  color: #4C0121;
-  padding:10px;
-}
-.nav-link:hover{
-  color: #d9c3c6 !important;
-  border: var(--light-lilac);
-}
-
-
-/*End of Header*/
-
-/*button*/
-
-.btn{
-  color: white;
-  background: #b43757;
-  font-weight: bolder;
-  letter-spacing: 0.25em;
-  word-spacing: 0.25em;
-  border: 1px solid black;
-}
-
-.btn:hover{
-  background-color: #621e37;
-  color: var(--light-lilac);
-}
-
-.btn:focus{
-    background: #7b2545;
-}
-
-/*End of button*/
-
-
-/*End of CARD*/
-
-
- /* Start of Footer CSS */
+/* Start of Footer CSS */
 .footer{
     position:static;
     width: 100%;
-    height: 5rem;
+    height: 7.5rem;
     align-items: center;
-    justify-content: space-between;
-    background: #270018;
+    /* justify-content: space-between; */
+    background: var(--dark-purp);
     text-align: center;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0px !important;
+    /* padding-bottom: 0.5rem; */
 }
 
 .footer .credit{
@@ -301,11 +312,29 @@ body{
 .contact{
   height:2.5rem;
   font-size: 1rem;
-  color: #d9c3c6;
+  color: black;
   text-decoration: none;
 }
 
 .contact:hover{
   color: var(--lilac);
 }
+
+#ontop{
+  background-color: var(--lilac);
+  border: 0;
+  margin: 1rem 1rem;
+}
+
+#ontop:hover {
+  color: var(--dark-purp);
+}
 /* End of Footer CSS */
+
+/*Start of Media Query CSS */
+@media (max-width: 40em) {
+.title-image {
+  visibility:hidden;
+}
+}
+/* End of Media Query CSS */
